@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+html{
+    scroll-behavior: smooth;
+}
+.about{
+    /* overflow: hidden; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 100vh;
+    width: 100vw;
+    background-color:black;
+}
+.about .about_r{
+    width: 50vw;
+    margin-bottom: 20px;
+}
+.about .about_logo{
+    margin-top: 5px;
+    gap: 10px;
+    display: flex;
+    margin-bottom: 13px;
+}
+.about .about_logo .about_box{
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 1px solid yellow;
+}
+.about .about_logo .about_box:hover{
+    background-color: rgb(94, 94, 9);  
+}
+.about a{
+    color: white;
+    text-decoration: none;
+    padding: 4px;
+    border-radius: 20px;
+    border: 1px solid yellow;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.about a:hover{
+    background-color: rgb(94, 94, 9);
+}
+
+
+.wrapper{
+    display: inline-flex;
+}
+.wrapper .static-txt{
+    font-size: 40px;
+    color: white;
+    font-weight: 700;
+}
+.wrapper .dynamic-txts{
+    margin-left: 10px;
+    height: 40px;
+    overflow: hidden;
+}
+.dynamic-txts li{
+    color: yellow;
+    font-size: 38px;
+    list-style: none;
+    font-weight: 700;
+    position: relative;
+    top: 0;
+    animation: slide 6s steps(4) infinite;
+}
+@keyframes slide {
+100%{
+    top: -178px;
+}
+}
+.dynamic-txts li span{
+    position: relative;
+}
+.dynamic-txts li span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-left: 2px solid yellow;
+    animation: typing 1.5s steps(10) infinite;
+    background-color:rgb(0, 0, 0) ;
+}
+@keyframes typing {
+    100%{
+        left: 100%;
+        margin: 0 -35px 0 35px; 
+    }
+}
+@media (max-width:960px){
+    .wrapper .static-txt
+    {
+        /* font-size: 35px; */
+        display: none;
+    }
+}
+@media (max-width:800px){
+    .about img{
+        height: 400px;
+    }
+    .about h1{
+        font-size: 50px;
+    }
+     .about{
+        flex-direction: column;
+     }
+     .wrapper .static-txt
+    {
+        /* font-size: 35px; */
+        display: none;
+    }
+}
+@media (max-width:670px){
+    .about img{
+        height: 320px;
+    }
+    .about h1{
+        font-size: 40px;
+    }
+    /* .wrapper .static-txt
+    {
+        /* font-size: 35px; */
+        /* display: none; */
+    /* }  */
+    /* .wrapper .dynamic-txts{
+        margin-left: 10px;
+        height: 40px;
+    }
+    .dynamic-txts li{
+        font-size: 38px;
+    } */
+    @keyframes typing {
+        100%{
+            left: 100%;
+            margin: 0 -20px 0 20px; 
+        }
+    }
+    /* .wrapper .static-txt .vis{
+        display:visible;
+    } */
+}
+/* new page */
+.a1{
+    /* overflow: hidden; */
+    min-height: 100vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.a1 img{
+    height: 400px;
+}
+.a2{
+    height: fit-content;
+    width: 500px;
+}
+@media (max-width:930px) {
+    .a1 img{
+        height: 300px;
+    }
+    .a2{
+        width: 450px;
+    }
+}
+@media (max-width:770px) {
+    .a1 img{
+        height: 280px;
+    }
+    .a2{
+        width: 400px;
+    }
+    .a2 h2{
+        font-size: 20px;
+    }
+}
+@media (max-width:650px) {
+    .a1 img{
+        height: 380px;
+    }
+    .a2{
+        width: 500px;
+    }
+     .a1{
+        flex-direction: column;
+     }
+     .a2 h2{
+        font-size: 25px;
+    }
+}
+@media (max-width:525px) {
+    .a1 img{
+        height: 340px;
+    }
+    .a2{
+        width: 450px;
+    }
+     /* .a1{
+        flex-direction: column;
+     } */
+     .a2 h2{
+        font-size: 22px;
+    }
+}
+@media (max-width:485px) {
+    .a1 img{
+        height: 300px;
+    }
+    .a2{
+        width: 400px;
+    }
+     /* .a1{
+        flex-direction: column;
+     } */
+     .a2 h2{
+        font-size: 20px;
+    }
+}
+@media (max-width:415px) {
+    .a1 img{
+        height: 260px;
+    }
+    .a2{
+        width: 350px;
+    }
+     /* .a1{
+        flex-direction: column;
+     } */
+     .a2 h2{
+        font-size: 20px;
+    }
+}
+/* new page */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+.qual{
+    min-height: 100vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.qual .head h1{
+    text-align: center;
+    text-decoration: underline;
+}
+.qual .head{
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+.divs{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 50px;
+    min-height: 250px;
+    width: 86vw;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 20px;
+    /* background-color: rgb(31, 27, 27); */
+}
+.divs .div_child{
+    /* text-align: center; */
+    /* border: 2px solid blue; */
+    /* box-shadow: 0px 0px 20px yellow; */
+    transition: 0.5s all;
+    background-color: rgb(14, 13, 13);
+    border-radius: 35px;
+    width: 330px;
+    height: fit-content;
+    padding: 20px;
+}
+.divs .div_child a{
+    text-decoration: none;
+    width: fit-content;
+    /* background-color: yellowgreen; */
+    border: 1px solid yellow;
+    /* outline: 10px 2px 2px yellow; */
+    /* filter: drop-shadow(5px 5px 5px yellow); */
+    /* box-shadow: 0px 3px 18px yellow; */
+    transition: 0.5s all;
+    border-radius: 20px;
+    /* padding-left: 5px; */
+    /* padding-right: 5px; */
+    padding: 3px;
+    color: white;
+    font-weight: 700;
+}
+.divs .div_child h1{
+    padding-bottom: 5px;
+}
+.divs .div_child h5{
+    padding-bottom: 20px;
+}
+.divs .div_child a:hover{
+    box-shadow: 0px 3px 18px yellow;
+}
+.divs .div_child:hover{
+    box-shadow: 0px 0px 20px yellow;
+    margin-bottom: 40px;
+}
+/* .div_space{
+} */
+ /* new page */
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.skill_con{
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    gap: 40px;
+}
+.skill_con .h1{
+    text-decoration: underline;
+}
+.html{
+    height: 8px;
+    width: 300px;
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid yellow;
+    box-shadow: 0px 0px 19px yellow;
+}
+.html_1{
+    animation: html 0.5s linear forwards;
+    height: 6px;
+    width: 0%;
+    background-color: yellow;
+    border-radius: 20px;
+    display: flex;
+    justify-content:end;
+    align-items: center;
+    transition: 1.8s all;
+}
+ .skill_con:hover .html_1{
+    width: 96%;
+}
+.css{
+    height: 8px;
+    width: 300px;
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid yellow;
+    box-shadow: 0px 0px 19px yellow;
+}
+.css_1{
+    animation: html 0.5s linear forwards;
+    height: 6px;
+    width: 0%;
+    background-color: yellow;
+    border-radius: 20px;
+    display: flex;
+    justify-content:end;
+    align-items: center;
+    transition: 1.8s all;
+}
+ .skill_con:hover .css_1{
+    width: 90%;
+}
+/*  */
+.js{
+    height: 8px;
+    width: 300px;
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid yellow;
+    box-shadow: 0px 0px 19px yellow;
+}
+.js_1{
+    animation: html 0.5s linear forwards;
+    height: 6px;
+    width: 0%;
+    background-color: yellow;
+    border-radius: 20px;
+    display: flex;
+    justify-content:end;
+    align-items: center;
+    transition: 1.8s all;
+}
+ .skill_con:hover .js_1{
+    width: 30%;
+}
+/*  */
+.pyt{
+    height: 8px;
+    width: 300px;
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid yellow;
+    box-shadow: 0px 0px 19px yellow;
+}
+.pyt_1{
+    animation: html 0.5s linear forwards;
+    height: 6px;
+    width: 0%;
+    background-color: yellow;
+    border-radius: 20px;
+    display: flex;
+    justify-content:end;
+    align-items: center;
+    transition: 1.8s all;
+}
+ .skill_con:hover .pyt_1{
+    width: 50%;
+}
+/*  */
+.c{
+    height: 8px;
+    width: 300px;
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid yellow;
+    box-shadow: 0px 0px 19px yellow;
+}
+.c_1{
+    animation: html 0.5s linear forwards;
+    height: 6px;
+    width: 0%;
+    background-color: yellow;
+    border-radius: 20px;
+    display: flex;
+    justify-content:end;
+    align-items: center;
+    transition: 1.8s all;
+}
+ .skill_con:hover .c_1{
+    width: 80%;
+}
+/*  */
+.java{
+    height: 8px;
+    width: 300px;
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid yellow;
+    box-shadow: 0px 0px 19px yellow;
+}
+.java_1{
+    animation: html 0.5s linear forwards;
+    height: 6px;
+    width: 0%;
+    background-color: yellow;
+    border-radius: 20px;
+    display: flex;
+    justify-content:end;
+    align-items: center;
+    transition: 1.8s all;
+}
+ .skill_con:hover .java_1{
+    width: 23%;
+}
+.html span,
+.css span,
+.js span,
+.pyt span,
+.c span,
+.java span{
+    font-size: 10px;
+    background-color: black;
+    border: 2px solid white;
+}
+/*  */
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+nav{
+    background-color: black;
+    /* border-bottom: 1px solid white; */
+    position: fixed;
+    height: 80px;
+    width: 100%;
+}
+label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 3px 6px;
+    border-radius: 30px;
+    text-transform: uppercase;
+}
+a:hover{
+    /* background: #1b9bff; */
+    box-shadow: 0px 0px 18px yellow;
+    border: 1px solid yellow;
+    transition: 0.5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media (max-width:1050px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+
+}
+@media (max-width:960px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        /* background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%); */
+        background-color: rgb(19, 19, 19);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover{
+        border: none;
+        box-shadow: none;
+        background: none;
+        color: yellow;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+/* @media (max-width:480px){
+    label.logo{
+        font-size: 25px;
+    }
+} */
+.left{
+    height: 500px;
+    width: 80px;
+    background-color: aqua;
+}
+.nav{
+    position:sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.login{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    background-size: cover ;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: grayscale(2);
+}
+.login_btn{
+    flex-direction: column;
+}
+.login_btn h1{
+    font-size: 50px;
+}
+.login_btn a{
+    /* color: black; */
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    /* font-family: arial Black;s */
+    font-weight: 200;
+    padding-left: 6px;
+    padding-right: 6px;
+    /* background-color: white; */
+    border-radius:36px;
+    border: 1px solid yellow;
+}
+.login_btn a:hover{
+    /* background-color: rgb(156, 156, 6); */
+    box-shadow: 0px 0px 18px yellow;
+    color: white;
+}
+
+@media (max-width:786px) {
+    .login_btn h1{
+        font-size: 40px;
+    }   
+}
+@media (max-width:630px) {
+    .login_btn h1{
+        font-size: 30px;
+    }   
+}
+@media (max-width:470px) {
+    .login_btn h1{
+        font-size: 20px;
+    }   
+    label.logo{
+        font-size: 25px;
+        padding: 0 40px;
+    }
+}
+
+.arrow{
+    font-family: arial black;
+    color: white;
+    font-size: 30px;
+}
+.arr{
+    box-shadow: none;
+    transform: rotate(-90deg);
+    position: fixed;
+    left: 10px;
+    bottom: 10px;
+}
+.arrow:hover{
+    box-shadow: none;
+    border: none;
+    filter: drop-shadow(1px 1px 4px yellow);
+}
+
+.arrowd{
+    font-family: arial black;
+    color: white;
+    font-size: 30px;
+}
+.arrd{
+    box-shadow: none;
+    transform: rotate(90deg);
+    position: absolute;
+    right: 10px;
+    bottom: 10px; */
+ }
+.arrowd:hover{
+    color: yellow;
+    box-shadow: none;
+    border: none;
+}
+
+.arrowd1{
+    font-family: arial black;
+    color: white;
+    font-size: 30px;
+    /* border: 0; */
+}
+.arrd1{
+    /* box-shadow: none; */
+    /* box-shadow: none; */
+    transform: rotate(90deg);
+    position:static;
+    right: 10px;
+    bottom: 10px;
+}
+.arrowd1:hover{
+    background-color: black;
+    box-shadow: none;
+    border: none;
+    /* filter: drop-shadow(1px 1px 4px yellow); */
+}
+.about .arrowd2{
+    font-family: arial black;
+    color: white;
+    font-size: 30px;
+    /* border: 0; */
+    border: none;
+}
+.about .arrd2{
+    /* box-shadow: none; */
+    /* box-shadow: none; */
+    transform: rotate(90deg);
+    position:static;
+    right: 10px;
+    bottom: 10px;
+}
+.about .arrowd2:hover{
+    /* filter: drop-shadow(1px 1px 4px yellow); */
+    background-color: black;
+    box-shadow: none;
+    border: none;
+    /* filter: drop-shadow(1px 1px 4px yellow); */
+}
+
+/* new page */
+#work_section{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    min-height: 100vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.work_in{
+    margin-top: 20px;
+    min-height: 300px;
+    gap: 30px;
+    width: 75vw;
+    /* background-color: rgb(27, 27, 27); */
+    /* border-radius: 15px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.work_in .work_chil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 260px;
+    width: 300px;
+    background-color: rgb(20, 20, 20);
+    transition: 0.5s all;
+    border-radius: 15px;
+}
+.work_in .work_chil:hover img{
+    filter: drop-shadow(1px 1px 3px yellow);
+}
+.work_in .work_chil:hover{
+    box-shadow: 0px 0px 12px yellow;
+}
+@media (max-width:1280px){
+    /* .work_in{
+        flex-direction: column;
+    } */
+    /* .work_in .work_chil{
+        flex-direction: column;
+    } */
+     
+}
+
+/* new page */
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+} */
+#contact_section{
+    min-height: 100vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+}
+.cont_in{
+    flex-wrap: wrap;
+    height: 350px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+.cont_chil{
+    text-align: center;
+    min-height: 300px;
+    width: 340px;
+    /* background-color: rgb(39, 39, 39); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.cont_chil .cont_chil1{
+    /* height: 20px; */
+    text-align: left;
+    width: 300px;
+    min-height: 250px;
+    /* background-color: black; */
+    padding: 10px;
+    border-radius: 10px;
+}
+.cont_chil .cont_chil1:hover{
+    box-shadow: 0 0 10px yellow;
+}
+.cont_chil .cont_chil1 h4,
+.cont_chil .cont_chil1 h3
+{
+    margin-bottom: 6px;
+}
+.cont_chil .cont_chil1 .about_logo{
+    margin-top: 16px;
+
+}
+
+.cont_chil2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    text-align: left;
+    width: 240px;
+    height: 250px;
+    /* background-color: black; */
+    padding: 10px;
+    border-radius: 10px;
+}
+.cont_chil2:hover{
+    box-shadow: 0 0 10px yellow;
+}
+.cont_chil2 input,
+.cont_chil2 textarea{
+    width: 97%;
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 4px;
+    box-shadow: 0 0 4px white;
+    color: white;
+    border: none;
+    outline: none;
+}
+.cont_chil2 .sb{
+    font-weight: 700;
+    color: black;
+    box-shadow: none;
+    background-color: rgba(245, 245, 11, 0.747);
+    transition: 0.5s all;
+    cursor: pointer;
+}
+.cont_chil2 .sb:hover{
+    box-shadow: 0 0 10px yellow;
+    background-color: transparent;
+    color: white;
+}
+.about_logo{
+    margin-top: 5px;
+    gap: 10px;
+    display: flex;
+    margin-bottom: 13px;
+}
+.about_logo .about_box{
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 1px solid yellow;
+}
+
+.about_logo .about_box:hover{
+    box-shadow: 0 0 12px yellow;
+    /* background-color: rgb(94, 94, 9);   */
+}
+
+
+#last_section{
+    margin-top: 60px;
+    height: 80px;
+    width: 100%;
+    /* background-color: rgba(0, 0, 0, 0.808); */
+    background-color: rgb(19, 17, 17);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.last_in{
+    width: 60%;
+    height: 72px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+    </style>
+</head>
+<body>
+    <section id="home_section">
+        <div class="nav">
+            <nav>
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    &#9776;
+                </label>
+                <label class="logo">PORT<span style="color: rgb(255, 234, 0);">FOLIO</span></label>
+                <ul>
+                    <li><a href="#home_section">HOME</a></li>
+                    <li><a href="#profile_section">profile</a></li>
+                    <li><a href="#about_section">about</a></li>
+                    <li><a href="#service_section">services</a></li>
+                    <li><a href="#work_section">Projects</a></li>
+                    <li><a href="#skill_section">SKILLS</a></li>
+                    <li><a href="#contact_section">contact</a></li>
+                </ul>
+            </nav>
+            </div>
+            <!-- khcgaskhcb -->
+            <!-- jgfhgfg -->
+            <div class="login login_btn">
+                <h1 style="color: white;">WELCOME TO MY <span style="color: yellow;">PORTFOLIO</span></h1>
+                <a href="#profile_section">Lets start</a>
+            </div>
+            <div class="arr"><a class="arrow" href="#home_section">&#10174;</a></div>
+            <!-- <div class="arrd"><a class="arrowd" href="#profile_section">&#10174;</a></div> -->
+        </section>
+        <!-- new page -->
+        <section id="profile_section">
+            <div class="about">
+        <img src="https://smartslider3.com/wp-content/uploads/slider560/portfolio.png" alt="" height="500px">
+        <div class="about_r">
+            <h1 style="color: white;"><span class="hid">Hi,It's</span><span style="color: yellow;">Ujjwal</span></h1>
+            <div class="wrapper">
+                <div class="static-txt">I am a</div>
+                <ul class="dynamic-txts">
+                    <li><span>Student</span></li>
+                    <li><span>Programmer</span></li>
+                    <li><span>Creator</span></li>
+                    <li><span>Engineer</span></li>
+                </ul>
+            </div>
+            <h4 style="color: white;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quaerat tempora cumque molestiae error ad veniam, totam, facilis labore quod minus culpa, consectetur amet distinctio? Quae hic minima sunt dignissimos?
+            Fuga eveniet neque autem sint facere laudantium delectus, totam laboriosam, dolore molestias harum id recusandae eligendi minima? Quas nisi quod repudiandae ea maxime architecto dolorem sapiente, laborum nam, necessitatibus aut?</h4>
+            <div class="about_logo">
+                <div class="about_box">&#9743;</div>
+                <div class="about_box">&#9743;</div>
+                <div class="about_box">&#9743;</div>
+                <div class="about_box">&#9743;</div>
+            </div>
+            <a href="#">Hire me</a>
+        </div>
+        <div class="arrd2"><a class="arrowd2" href="#about_section">&#10174;</a></div>
+    </div>
+</section>
+<!-- new page -->
+<section id="about_section">
+    <div class="a1">
+        <img src="https://smartslider3.com/wp-content/uploads/slider560/portfolio.png" alt="">
+        <div class="a2">
+            <h1 style="color: yellow;">About me</h1>
+            <h2 style="color: white;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore eveniet minus, minima rem nesciunt
+                blanditiis quasi ratione? Omnis, dolorem at saepe quisquam consequatur repellat, et in voluptas suscipit
+                quod quaerat?</h2>
+            </div>
+        <div class="arrd1"><a class="arrowd1" href="#service_section">&#10174;</a></div>
+    </div>
+</section>
+    <!-- new page -->
+     <section id="service_section">
+    <div class="qual">
+        <div class="head">
+            <h1 style="color: white;">My <span style="color: yellow ;">Services</span></h1>
+        </div>
+        <div class="divs">
+            <div class="div_child">
+                <h1 style="color: yellow;">&#9758;</h1>
+                <h1 style="color: white; text-align: center;">Web <span style="color: yellow;">Developer</span></h1>
+                <h5 style="color: white;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam et
+                    aspernatur voluptates voluptatum. Odit asperiores cum ea, harum non sint. Exercitationem voluptas
+                    tenetur perferendis assumenda id, laboriosam molestiae officia tempore?</h5>
+                <center><a href="#">Read more</a></center>
+            </div>
+            <div class="div_child">
+                <h1 style="color: yellow;">&#9758;</h1>
+                <h1 style="color: white; text-align: center;">Web <span style="color: yellow;">Developer</span></h1>
+                <h5 style="color: white;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam et
+                    aspernatur voluptates voluptatum. Odit asperiores cum ea, harum non sint. Exercitationem voluptas
+                    tenetur perferendis assumenda id, laboriosam molestiae officia tempore?</h5>
+                <center><a href="#">Read more</a></center>
+            </div>
+            <div class="div_child div_space">
+                <h1 style="color: yellow;">&#9758;</h1>
+                <h1 style="color: white; text-align: center;">Web <span style="color: yellow;">Developer</span></h1>
+                <h5 style="color: white;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam et
+                    aspernatur voluptates voluptatum. Odit asperiores cum ea, harum non sint. Exercitationem voluptas
+                    tenetur perferendis assumenda id, laboriosam molestiae officia tempore?</h5>
+                <center><a href="#">Read more</a></center>
+            </div>
+            <div class="arrd1"><a class="arrowd1" href="#work_section">&#10174;</a></div>
+        </div>
+    </div>
+</section>
+<!-- new page -->
+<section id="work_section">
+    <h1 style="color: white; text-decoration: underline;">OUR <span style="color: yellow;">PROJECTS</span></h1>
+    <div class="work_in">
+        <div class="work_chil"><img src="https://static.vecteezy.com/system/resources/previews/011/153/360/original/3d-web-developer-working-on-project-illustration-png.png" height="220px" alt="">
+            <h2 style="color: white;">Mobile <span style="color: yellow;">Applications</span></h2>
+        </div>
+        <div class="work_chil"><img src="https://static.vecteezy.com/system/resources/previews/022/418/069/original/project-task-management-and-effective-time-planning-tools-project-development-icon-3d-vector-illustration-png.png" height="220px" alt="">
+            <h2 style="color: white;">Powerful <span style="color: yellow;">ERP's</span></h2>
+        </div>
+        <div class="work_chil work_child"><img src="https://static.vecteezy.com/system/resources/previews/011/153/360/original/3d-web-developer-working-on-project-illustration-png.png" height="220px" alt="">
+            <h2 style="color: white;">Responsive <span style="color: yellow;">Websites</span></h2>
+        </div>
+        <div class="arrd1"><a class="arrowd1" href="#skill_section">&#10174;</a></div>
+    </div>
+</section>
+    <!-- new page -->
+     <section id="skill_section">
+    <div class="skill_con">
+        <h1 class="h1">My <span style="color: yellow;">Skills</span></h1>
+        <div class="skill_cen">
+            <div class="progress">
+                <h1>HTML</h1>
+                <div class="html"><div class="html_1"><span>96%</span></div></div>
+            </div>
+            <div class="progress">
+                <h1>CSS</h1>
+                <div class="css"><div class="css_1"><span>90%</span></div></div>
+            </div>
+            <div class="progress">
+                <h1>JS</h1>
+                <div class="js"><div class="js_1"><span>30%</span></div></div>
+            </div>
+            <div class="progress">
+                <h1>PYTHON</h1>
+                <div class="pyt"><div class="pyt_1"><span>50%</span></div></div>
+            </div>
+            <div class="progress">
+                <h1>C</h1>
+                <div class="c"><div class="c_1"><span>80%</span></div></div>
+            </div>
+            <div class="progress">
+                <h1>JAVA</h1>
+                <div class="java"><div class="java_1"><span>23%</span></div></div>
+            </div>
+        </div>
+        <div class="arrd1"><a class="arrowd1" href="#contact_section">&#10174;</a></div>
+    </div>
+</section>
+    <!-- new page -->
+    <section id="contact_section">
+        <!-- <div class="cccc"> -->
+        <h1 style="color: white; text-decoration: underline;">Contact <span style="color: yellow;">Me</span></h1>
+        <div class="cont_in">
+            <div class="cont_chil cont_child">
+                <h1 style="color: white;">Lets Work <span style="color: yellow;">Together</span></h1>
+                <div class="cont_chil1">
+                    <h4 style="color: white;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim mollitia culpa perspiciatis
+                        voluptates quae aliquid totam dolore dolorum rerum, veniam dignissimos fugiat. Soluta
+                        repudiandae ex placeat modi perspiciatis sequi necessitatibus.
+                        Aperiam dolores!</h4>
+                        <h3 style="color: yellow;">&#10146; <span style="color: white;">official@gmail.com</span></h3>   
+                        <h3 style="color: yellow;">&#9990; <span style="color: white;">1106604224</span></h3>   
+                        <div class="about_logo">
+                            <div class="about_box">&#9743;</div>
+                            <div class="about_box">&#9743;</div>
+                            <div class="about_box">&#9743;</div>
+                            <div class="about_box">&#9743;</div>
+                        </div>
+                    </div>
+            </div>
+            <div class="cont_chil cont_child2">
+                <h1 style="color: white;">Message <span style="color: yellow;">Me</span></h1>
+                <div class="cont_chil2">
+                <input type="text" placeholder="Enter Name...">
+                <input type="email" placeholder="email..">
+                <textarea name="Message" placeholder="Message here...."></textarea>
+                <input class="sb" type="submit">
+                </div>
+            </div>
+
+
+            <div class="last_in">
+                <h5>&copy; Copyright under section 101A</h5>
+                <h4 style="color: yellow;">&#10146; <span style="color: white;">official@gmail.com</span></h4>   
+                            <h4 style="color: yellow;">&#9990; <span style="color: white;">1106604224</span></h4>
+            </div>
+        </div>
+    </section>
+    <!-- new page -->
+    <!-- <section id="last_section">
+        <div class="llll">
+        
+    </div>
+    </section> -->
+</body>
+</html>
